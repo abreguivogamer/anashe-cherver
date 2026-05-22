@@ -1,0 +1,49 @@
+
+#ReCased Global Settings
+[General]
+	#If true, the Rarity and Type of items will be displayed in their hover tooltip.
+	showRarityInTooltip = false
+	#If true, the default mod crates (Weapon, Tool, Potion, etc.) will not be registered.
+	disableStandardCrates = false
+	#If true, players can use the Casing Station GUI to create custom cases.
+	enableCasingStationGUI = false
+	#List of Item IDs (e.g. 'minecraft:dirt') that will NEVER appear in any Loot Case.
+	excludedItems = []
+
+#Villager Trade Settings
+[Villager]
+	#If true, Custom Cases will be added to the Cases Profession Villager.
+	enableVillagerTrades = true
+	#The default emerald cost for buying Custom Cases from Villagers.
+	#Range: 1 ~ 64
+	defaultEmeraldCost = 25
+
+#Suspicious Sand Settings
+[Archaeology]
+	#If true, cases can be found when brushing suspicious sand.
+	enableSuspiciousSand = true
+	#The base percentage chance (0.0 to 1.0) to find a case in suspicious sand.
+	#Range: 0.0 ~ 1.0
+	suspiciousSandChance = 0.1
+
+#Durability Settings for items dropped from cases
+[Durability]
+	#If true, weapons and tools will always drop at 100% durability.
+	disableRandomDurability = false
+	#List of Item IDs that will always drop with full durability.
+	excludedDurabilityItems = []
+	#List of Case Types (e.g. 'weapon') that will drop items with full durability.
+	excludedDurabilityTypes = []
+
+#Dungeon and Chest Loot Injection Settings
+[WorldGeneration]
+	#Enable Loot Cases spawning naturally in dungeon and village chests?
+	enableChestLoot = true
+	#Global multiplier for case spawn chances. 0.5 = half as often, 2.0 = double.
+	#Range: 0.0 ~ 100.0
+	globalSpawnMultiplier = 1.0
+	#List of chest injections.
+	#Format: 'case_id | loot_table | chance'
+	#Example: 'weapon | minecraft:chests/simple_dungeon | 0.05'
+	caseSpawnInjections = ["tool | minecraft:chests/abandoned_mineshafts | 0.05", "weapon | minecraft:chests/simple_dungeon | 0.05", "special | minecraft:chests/simple_dungeon | 0.01", "special | minecraft:chests/desert_pyramid | 0.02", "armor | minecraft:chests/village/village_weaponsmith | 0.05", "armor | minecraft:chests/village/village_armorer | 0.10", "armor | minecraft:chests/village/village_toolsmith | 0.05"]
+
